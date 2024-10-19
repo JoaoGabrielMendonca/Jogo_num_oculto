@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Número Oculto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <h2>Número Oculto</h2>
+        <div id="primeiro">
+            <p>Jogador 1: Escolha um número entre 1 e 100:</p>
+            <input type="number" id="oculto" min="1" max="100">
+            <button onclick="iniciar()">Ocultar Número</button>
+        </div>
+        <div id="segundo" style="display: none;">
+            <p>Jogador 2: Adivinhe o número!</p>
+            <input type="number" id="guess" min="1" max="100">
+            <button onclick="chutar()">Chutar</button>
+            <p id="sobrando">Tentativas restantes: 5</p>
+            <div id="mensagem"></div>
+        </div>
+        <div id="pos"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
